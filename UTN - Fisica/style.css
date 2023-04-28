@@ -1,0 +1,197 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 2px;
+	padding: 0px;
+
+}
+
+h2{ font-size: 1.5em;}
+h3{ font-size: 1.2em;}
+p{ font-size: 1em;}
+
+header .container-encabezado{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(230, 230, 230);
+}
+
+header h1{
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: blueviolet;
+	font-size: 1.75em;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a {
+	padding: 5px 12px; /* DISTANCIA ENTRE LINKS DEL ENCABEZADO */
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.25em;
+}
+
+header a:hover{
+	color: blueviolet;
+}
+
+footer{
+	background-color: rgb(230, 230, 230);
+	/*margin-top: -25px;*/
+}
+
+footer h2{
+	padding: 11px;
+	text-align: center;
+	color: blueviolet;
+}
+
+footer .container { /*copyright*/
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-basis: 100%;
+}
+
+.container-sections{
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	text-align: left;
+
+}
+
+.container-img{
+	display: flex;
+	overflow: hidden;
+    height: 250px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin: auto;
+    /*-webkit-box-reflect: below 2px
+    -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 55%, transparent 50%, transparent 50%);
+    */
+}
+
+.container{
+	height: 400px;
+	width: 350px;
+ 	position: relative;
+  	margin: auto;
+}
+
+/*EFECTO REFRACCION*/
+.container-img:hover{
+	-webkit-box-reflect: below 2px
+    -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 55%, transparent 50%, transparent 50%);
+   	 transition-timing-function: steps(3, jump-end);
+}
+
+							
+
+.imagen-plano1{
+	height: 350px;
+	width: 300px;
+ 	position: relative;
+ 	margin: auto;
+}
+
+.imagen-plano2{
+	height: 350px;
+	width: 350px;
+ 	position: relative;
+  	margin: auto;
+}
+
+.imagen-plano1, .imagen-plano2 img{
+	object-fit: cover;
+ 	justify-content: center;
+    align-items: center;
+}
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo2 {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+	h2{
+		text-align: center;
+	}
+
+	.texto{
+		text-align: center;
+	}
+
+	 /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+
+

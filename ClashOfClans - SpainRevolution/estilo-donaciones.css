@@ -1,0 +1,111 @@
+
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth; /* PARA QUE LA BARRA SE DESLIZE MAS FLUIDA */
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 0px;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em;   }
+p { font-size: 1.25em;}
+ul{ list-style: none; } /* ELIMINAMOS LOS PUNTITOS DE LOS ITEMS QUE TRAE POR DEFECTO LA LISTA */
+li{ font-size: 1.25em;}
+
+.container{
+	max-width: 1400px;
+	margin: auto;
+}
+
+header{
+	background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 1.6em;
+}
+
+header .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a {
+	padding: 5px 12px; /* DISTANCIA ENTRE LINKS DEL ENCABEZADO */
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover{
+	color: blueviolet;
+}
+
+.programas{
+	margin-top: -100px;
+}
+
+/*CAMBIAMOS EL FONDO DE LAS CARTAS CON EL ID DE TITULO*/
+#normas{
+	background-color: #00ffff;
+	color: white;
+	text-align: center;
+}
+
+#normas .container{
+	padding: 100px 0px;
+}
+
+#normas h2{
+	margin-top: 0;
+	font-size: 3.2em;
+}
+
+
+#normas .carta{
+	background-size: cover; /* PARA QUE LA IMAGEN OCUPE TODO EL ESPACIO DISPONIBLE */
+	background-position: center center;
+	padding: 50px 50px;
+	margin: 20px 20px;
+	border-radius: 15px;
+}
+
+.carta:first-child{
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/donaciones-mobile2.jpg");
+}
+
+footer{
+	background-color: rgb(230, 230, 230);
+	margin-top: -29px;
+}
+
+footer .container { /*copyright*/
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: -100px;
+}

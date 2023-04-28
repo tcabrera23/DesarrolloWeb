@@ -1,0 +1,7 @@
+Para este proyecto la profesora nos había pedido que interpretemos a libre elección una "obra artística" relacionada a Óptica física. Como estaba en un curso en su mayoría de estudiantes de ingeniería eléctrica, le sugerí a mi único compañero de sistemas hacer una pagina para registrar la información y contar lo que queríamos y hacer algo distinto a lo que se podía esperar.
+
+No teníamos mucho tiempo disponible para hacer la página como deseábamos, así que decidimos enfocarnos en una resolución Mobile. 
+
+Hablamos de la teoría de óptica física sobre espejos planos y aprovechamos a ver como impacto en el mundo y los usos que ha tenido desde entonces.
+
+La profesora quedó satisfecha por cómo trabajamos y lo dinámico que hicimos la exposición del tema. 

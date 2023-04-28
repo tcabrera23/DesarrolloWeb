@@ -1,0 +1,356 @@
+/*AL DARLE LEER MAS QUE TE LLEVE A OTRA PAGINA SI ESTAS EN VERSION MOBILE*/
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth; /* PARA QUE LA BARRA SE DESLIZE MAS FLUIDA */
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 0px;
+}
+
+h1{ font-size: 3.5em; }
+
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em;   }
+p { font-size: 1.25em;}
+ul{ list-style: none; } /* ELIMINAMOS LOS PUNTITOS DE LOS ITEMS QUE TRAE POR DEFECTO LA LISTA */
+li{ font-size: 1.25em;}
+
+button{
+	font-size: 1.5em;
+	font-weight: bold; /* LE DAMOS UN BOLD PORQUE SEA NEGRITA EL ANCHO DEL TEXTO */
+	padding: 10 px 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: blueviolet;
+}
+
+button:hover{
+	background-color: red;
+	transition-delay: 1s;
+}
+
+.container{
+	max-width: 1400px;
+	margin: auto;
+}
+
+header{
+	background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 1.6em;
+}
+
+header .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a {
+	padding: 5px 12px; /* DISTANCIA ENTRE LINKS DEL ENCABEZADO */
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover{
+	color: blueviolet;
+}
+
+#presentacion{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;           /*OCUPARA EL 90% DE MI PANTALLA */
+	color: white;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/clan2.jpeg");
+
+	background-size: cover; /* PARA QUE LA IMAGEN OCUPE TODO EL ESPACIO DISPONIBLE */
+	background-position: center center;
+}
+
+#presentacion h1{
+	color: white;
+	font-size: 3.35em;
+}
+
+.color-acento1{
+	color: #ff0000;
+}
+
+.color-acento2{
+	color: #ffd700;
+}
+
+#quienes-somos.container{
+	text-align: center;
+	padding: 200px 12px;
+	background-color: rgb(230, 230, 230);
+}
+
+/*CAMBIAMOS EL FONDO DE LAS CARTAS CON EL ID DE TITULO*/
+#normas{
+	background-color: rgb(30, 30, 30);
+	color: white;
+	text-align: center;
+}
+
+#normas .container{
+	padding: 100px 0px;
+}
+
+#normas h2{
+	margin-top: 0;
+	font-size: 3.2em;
+}
+
+/*DESAPARECEMOS LOS PARRAFOS DE LA VERSION MOBILE*/
+#normas p{
+	display: none;
+}
+
+#normas .carta{
+	background-size: cover; /* PARA QUE LA IMAGEN OCUPE TODO EL ESPACIO DISPONIBLE */
+	background-position: center center;
+	padding: 50px 50px;
+	margin: 20px 20px;
+	border-radius: 15px;
+}
+
+/*los diferencio con los fondos*/
+
+.carta:first-child{
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/juegos-mobile.jpg");
+
+}
+
+.carta:nth-child(2){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/guerra-mobile.jpg");
+}
+
+.carta:nth-child(3){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/donaciones-mobile.jpg");
+}
+
+
+footer{
+	background-color: rgb(230, 230, 230);
+	margin-top: -29px;
+	flex-grow: 1;
+	
+
+}
+
+.footer h2{
+	font-size: 33px;
+	padding: 11px;
+	text-align: center;
+}
+
+footer .container { /*copyright*/
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: -100px;
+}
+
+footer form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+	
+/*RESOLUCION ESCRITORIO*/
+
+@media (min-width: 800px) {
+	/*El fixed con un ancho del 100% me mantendra el encabezado siempre fijo,
+	por mas que la barra del scroll se mueva*/
+	header{
+		position: fixed;
+		width: 100%;
+	}
+
+	header .container{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 20px;
+	}
+
+	#presentacion{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;           /*OCUPARA EL 90% DE MI PANTALLA */
+	color: white;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/descrp2.jpeg");
+
+	background-size: cover; /* PARA QUE LA IMAGEN OCUPE TODO EL ESPACIO DISPONIBLE */
+	background-position: center center;
+	}
+
+	#presentacion h1{
+		font-size: 5em;
+	}
+
+	#quienes-somos .container{
+		display: flex;
+		justify-content: space-evenly; /* REPARTE EL MISMO ESPACIO DISPONIBLE PARA AMBOS */
+	}
+
+	#quienes-somos h2{
+		margin-top: 0px;
+		margin-left: -200px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#quienes-somos .texto{
+		width: 50%;
+		text-align: initial;
+		padding-left: 30px;
+		max-width: 600px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/**/
+	#quienes-somos .img-container{
+		background-image: url("img/img-portada.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 500px;
+		width: 400px;
+	}
+
+	#normas .programas{
+		display: flex;
+		justify-content: center;
+	}
+
+	#normas .programas form{
+		display: none;
+	}
+
+	#normas p{
+		display: block;
+		line-height: 1.8;
+	}
+
+	#normas h2{
+		font-size: 4em;
+	}
+
+	#normas h3{
+		margin-top: 0;
+	}
+
+	#normas .carta{
+		padding: 37px;
+		background-size: 100% 150px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+		background-color: rgba(50, 50, 50, 1);
+		box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	}
+
+	.carta:first-child{
+		background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/juegos-escritorio.jpg");
+	}
+
+	.carta:nth-child(2){
+		background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/guerra-escritorio.jpg");
+	}
+
+	.carta:nth-child(3){
+		background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("img/donaciones-escritorio.jpg");
+	}
+
+	footer .container {
+		justify-content: flex-end;
+	}
+
+	button{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	background-color: green;
+	width: 250px;
+	height: 50px;
+	overflow: hidden;
+	margin: auto;
+	}
+}

@@ -1,0 +1,7 @@
+Para estar en contexto, el Clash of Clans es un videojuego de estrategia y construcción de aldeas desarrollado por la compañía Supercell.
+
+El año pasado lo retomé por un tiempo y estuve en un clan que contaba con un blog acerca de sus normas y reglas de jugar. Sinceramente el blog me pareció muy poco claro y era algo común al resto.
+
+En ese momento me encontraba estudiando de forma autodidacta HTML y CSS. Me animé a crear un diseño de página web con el mismo contenido que estaba en el blog. Presente el tema en el grupo del clan y estuvieron de acuerdo en hacerla su web reemplazando el antiguo blog
+
+Me hizo mucha ilusión que les haya gustado ya que recién comenzaba con las tecnologías y estaba aplicándolo en mi entorno. 
